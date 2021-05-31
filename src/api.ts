@@ -12,6 +12,6 @@ export function fetchAllPokemons(offset: number, limit: number) {
     return axios(`${API_URL}?offset=${offset}&limit=${limit}`)
 }
 
-export function fetchPokemon(id: number) {
-    return axios(`${API_URL}/${id}`)
+export function fetchPokemon(name: string) {
+    return axios(`${API_URL}/${name}`)
 }
